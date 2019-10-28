@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="direct_url_testing(failed)">
     <classes>
       <class name="com.asms.testcases.DirectURLTesting">
         <methods>
           <include name="tearDownMethod"/>
           <include name="setupSuite"/>
-          <include name="directASMS_URL_Testing" invocation-numbers="0 1 2 3 6 7 8 13 21 25 27"/>
+          <include name="directASMS_URL_Testing_After_Login" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.asms.testcases.DirectURLTesting -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- direct_url_testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

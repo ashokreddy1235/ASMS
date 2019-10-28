@@ -15,7 +15,6 @@
 		<groupId>org.testng</groupId>
 		<artifactId>testng</artifactId>
 		<version>6.14.3</version>
-		<scope>test</scope>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
@@ -52,9 +51,11 @@
 			<version>3.0.0-M3</version>
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+					<suiteXmlFile>XMLFiles/DirectURLTesting.xml</suiteXmlFile>
 				</suiteXmlFiles>
-				<!-- <systemPropertyVariables>
+				<!-- This code commented only for direct url testing
+				
+				<systemPropertyVariables>
 					<browser>${browser}</browser>
 					<appUrl>${urlToBeTested}</appUrl>
 				</systemPropertyVariables> -->

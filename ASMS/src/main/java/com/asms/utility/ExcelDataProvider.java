@@ -16,7 +16,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelDataProvider 
 {
 	public static Workbook wb;
-	public static Object[][] readExcelData() 
+	public static Object[][] readExcelData(String sheetName) 
 	{
 		try 
 		{
@@ -27,7 +27,7 @@ public class ExcelDataProvider
 		{
 			System.out.println("Unable to read Excel file"+e.getMessage());
 		} 
-		Sheet sh = wb.getSheet("AppURL_MPL");
+		Sheet sh = wb.getSheet(sheetName);
 		int rowCount = sh.getLastRowNum();
 		int colCount = sh.getRow(0).getLastCellNum();
 		System.out.println("rows & cols"+rowCount+"&"+colCount);

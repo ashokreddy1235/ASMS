@@ -15,6 +15,7 @@ import org.testng.asserts.SoftAssert;
 public class LoginPage 
 {
 	WebDriver driver;
+	String expValue = "AviatorSMS";
 	
 	public LoginPage(WebDriver ldriver)
 	{
@@ -24,17 +25,16 @@ public class LoginPage
 	@FindBy(name="txt_Username") WebElement username;
 	@FindBy(name="txt_Password") WebElement password;
 	@FindBy(name="btn_Login") WebElement login;
-	@FindBy(id="lbl_msg") WebElement spanMessage;
 	
-	public void loginToHRM(String appUserName, String appPassword, String expValue)
+	
+	public void loginToASMS(String appUserName, String appPassword)
 	{
 		username.clear();
 		username.sendKeys(appUserName);
 		password.clear();
 		password.sendKeys(appPassword);
 		login.click();
-		String actValue = spanMessage.getText();
-		System.out.println("Span Message:"+actValue);
+		String actValue = driver.getTitle();
 		SoftAssert softAssertion = new SoftAssert();
 		softAssertion.assertEquals(actValue, expValue);
 		softAssertion.assertAll();

@@ -17,21 +17,22 @@ import com.asms.utility.ExcelDataProvider;
  */
 public class LoginTestASMS extends BaseClass
 {
+	public static String sheetName="AppCreds";
 	@DataProvider(name="userCredentials")
 	public static Object[][] getData()
 	{
-		return ExcelDataProvider.readExcelData();
+		return ExcelDataProvider.readExcelData(sheetName);
 	}
 	
 	
 	
 	@Test(dataProvider="userCredentials")
-	public void loginApp(String username,String Password,String expValue)
+	public void loginApp(String username,String Password)
 	{
-		logger = report.createTest("Login to HRM");
+		logger = report.createTest("Login to ASMS");
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		logger.info("Starting Application");
-		loginPage.loginToHRM(username, Password, expValue);
+		loginPage.loginToASMS(username, Password);
 		logger.pass("Login Success");
 		
 	}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="direct_url_testing">
+    <classes>
+      <class name="com.asms.testcases.DirectURLTesting">
+      <methods>
+      <include name="directASMS_URL_Testing_After_Login"/>
+      <include name="applicationLogin"/>
+      <exclude name="directASMS_URL_Testing"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

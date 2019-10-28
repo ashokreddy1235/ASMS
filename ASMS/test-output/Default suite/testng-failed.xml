@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.asms.testcases.DirectURLTesting">
+      <class name="com.asms.testcases.LoginTestASMS">
         <methods>
           <include name="tearDownMethod"/>
+          <include name="setup"/>
+          <include name="loginApp"/>
           <include name="setupSuite"/>
-          <include name="directASMS_URL_Testing"/>
         </methods>
-      </class> <!-- com.asms.testcases.DirectURLTesting -->
+      </class> <!-- com.asms.testcases.LoginTestASMS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
