@@ -1,39 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Failed suite [Suite]" duration-ms="41482" started-at="2019-09-27T11:46:03Z" finished-at="2019-09-27T11:46:45Z">
+  <suite name="Suite" duration-ms="140548" started-at="2019-11-16T05:50:53Z" finished-at="2019-11-16T05:53:14Z">
     <groups>
     </groups>
-    <test name="direct_url_testing(failed)" duration-ms="41482" started-at="2019-09-27T11:46:03Z" finished-at="2019-09-27T11:46:45Z">
-      <class name="com.asms.testcases.DirectURLTesting">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.asms.testcases.DirectURLTesting@754ba872]" name="setupSuite" is-config="true" duration-ms="745" started-at="2019-09-27T11:46:03Z" finished-at="2019-09-27T11:46:03Z">
+    <test name="SmokeTesting" duration-ms="140548" started-at="2019-11-16T05:50:53Z" finished-at="2019-11-16T05:53:14Z">
+      <class name="com.asms.testcases.LoginTestASMS">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="setupSuite" is-config="true" duration-ms="717" started-at="2019-11-16T05:50:53Z" finished-at="2019-11-16T05:50:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="directASMS_URL_Testing_After_Login(java.lang.String)[pri:0, instance:com.asms.testcases.DirectURLTesting@754ba872]" name="directASMS_URL_Testing_After_Login" duration-ms="34243" started-at="2019-09-27T11:46:07Z" data-provider="directURL" finished-at="2019-09-27T11:46:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="setup" is-config="true" duration-ms="69772" started-at="2019-11-16T05:50:56Z" finished-at="2019-11-16T05:52:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginApp(java.lang.String, java.lang.String)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="loginApp" duration-ms="13173" started-at="2019-11-16T05:52:05Z" data-provider="userCredentials" finished-at="2019-11-16T05:52:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://182.75.89.80:8090/bialelmsuat/LMS/Training/OnlineCourseScheduling.aspx]]>
+                <![CDATA[bial100807]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[welcome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- directASMS_URL_Testing_After_Login -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.asms.testcases.DirectURLTesting@754ba872]" name="tearDownMethod" is-config="true" duration-ms="4180" started-at="2019-09-27T11:46:41Z" finished-at="2019-09-27T11:46:45Z">
+        </test-method> <!-- loginApp -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="5551" started-at="2019-11-16T05:52:18Z" finished-at="2019-11-16T05:52:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=directASMS_URL_Testing_After_Login status=SUCCESS method=DirectURLTesting.directASMS_URL_Testing_After_Login(java.lang.String)[pri:0, instance:com.asms.testcases.DirectURLTesting@754ba872] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestASMS.loginApp(java.lang.String, java.lang.String)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-      </class> <!-- com.asms.testcases.DirectURLTesting -->
-    </test> <!-- direct_url_testing(failed) -->
-  </suite> <!-- Failed suite [Suite] -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="setup" is-config="true" duration-ms="16537" started-at="2019-11-16T05:52:24Z" finished-at="2019-11-16T05:52:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginApp(java.lang.String, java.lang.String)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="loginApp" duration-ms="8135" started-at="2019-11-16T05:52:41Z" data-provider="userCredentials" finished-at="2019-11-16T05:52:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bial100701]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[welcome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="3584" started-at="2019-11-16T05:52:49Z" finished-at="2019-11-16T05:52:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestASMS.loginApp(java.lang.String, java.lang.String)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="setup" is-config="true" duration-ms="8417" started-at="2019-11-16T05:52:52Z" finished-at="2019-11-16T05:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginApp(java.lang.String, java.lang.String)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="loginApp" duration-ms="10019" started-at="2019-11-16T05:53:01Z" data-provider="userCredentials" finished-at="2019-11-16T05:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bial100622]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[welcome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7]" name="tearDownMethod" is-config="true" duration-ms="3058" started-at="2019-11-16T05:53:11Z" finished-at="2019-11-16T05:53:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestASMS.loginApp(java.lang.String, java.lang.String)[pri:0, instance:com.asms.testcases.LoginTestASMS@53b32d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.asms.testcases.LoginTestASMS -->
+    </test> <!-- SmokeTesting -->
+  </suite> <!-- Suite -->
 </testng-results>

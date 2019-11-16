@@ -44,13 +44,13 @@ public class BaseClass
 	
 	/*  This code is commented only for Direct URL testing
 	 * 
-	 * @Parameters({"browser","urlToBeTested"})
-	@BeforeMethod
-	public void setup(String browser,String url)
+	 * @Parameters({"browser","urlToBeTested"}) */
+	@BeforeMethod 
+	public void setup()
 	{
-		//driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getUrl());
-		driver = BrowserFactory.startApplication(driver, browser, url);
-	}*/
+		driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getUrl());
+		//driver = BrowserFactory.startApplication(driver, browser, url);
+	}
 	
 	@AfterMethod
 	public void tearDownMethod(ITestResult result) throws IOException

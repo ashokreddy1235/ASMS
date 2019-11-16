@@ -51,7 +51,8 @@
 			<version>3.0.0-M3</version>
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFile>XMLFiles/DirectURLTesting.xml</suiteXmlFile>
+					<!--  <suiteXmlFile>XMLFiles/DirectURLTesting.xml</suiteXmlFile> -->
+					<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
 				</suiteXmlFiles>
 				<!-- This code commented only for direct url testing
 				
